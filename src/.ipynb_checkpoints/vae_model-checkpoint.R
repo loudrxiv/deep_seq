@@ -116,7 +116,7 @@ z_logVar = z |> layer_conv_1d(filters = 32,
                                 kernel_size = 1L, 
                                 padding = "same",
                                 use_bias = TRUE)
-mod_embed = keras_model(ipt, z_mean, name = "embed_seq")
+mod_embed = keras_model(ipt,z_mean, name = "embed_seq")
 
 b_dim    = tf$shape(z_mean)[1] # batch dimension
 x_dim    = tf$shape(z_mean)[2] # sequence length
