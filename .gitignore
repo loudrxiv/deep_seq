@@ -1,3 +1,4 @@
-# Large Files
+#==== Base Directories
 benchmark/*
-
+data/*
+plots/*

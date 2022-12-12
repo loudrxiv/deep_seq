@@ -1,9 +1,11 @@
-# PREAMBLE=====
-#- Authors
-##- Dennis Kostka 
-##- Mark Ebeid
+# 2022-2023
+#
+# Dennis Kostka & Mark Ebeid
+#
+# Baseline VAE model that utilizes CNNs for regulatory landscape prediction
+#
+# ===========================================================================
 
-# LIBRARIES==== 
 library(reticulate)
 library(tensorflow)
 library(tfdatasets)
@@ -12,7 +14,7 @@ library(ggplot2)
 library(keras)
 library(tfaddons)
 
-#- Sanity
+# stop if tf without keras
 if(! is_keras_available(version = NULL)) 
   stop("No Keras.")
 
