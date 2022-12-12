@@ -7,20 +7,30 @@
 # Bioconductor
 install.packages("BiocManager",  force=FALSE)
 BiocManager::install()
+#+end_src
 
+#+begin_src bash 
 # 'BSgenome.Hsapiens.UCSC.hg*'
 BiocManager::install("BSgenome.Hsapiens.UCSC.hg38")
+#+end_src
 
+#+begin_src bash 
 # tfdatasets for scalable ML
 devtools::install_github("rstudio/tfdatasets")
+#+end_src
 
+#+begin_src bash 
 # TensorHub
 install.packages("tfhub",  force=FALSE)
+#+end_src
 
+#+begin_src bash 
 # tfaddons
 devtools::install_github('henry090/tfaddons')
 tfaddons::install_tfaddons()
+#+end_src
 
+#+begin_src bash 
 # rCausalMGM
 if (!require(devtools, quietly = TRUE))
     install.packages("devtools")
